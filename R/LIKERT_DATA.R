@@ -1,22 +1,33 @@
-#' LIKERT_DATA
+#' Datos de Escala Likert de Estudiantes
 #'
-#'
-#'@format El archivo incluye 3 columnas con 30 filas. Representando respuestas de 30 estudiantes a tres preguntas
-#'
-#' \describe{
-#'  \item{P1}{Tenemos equipo de simulación adecuado para practicar?}
-#'  \item{P2}{Disponemos de modulos computarizados adecuados para el aprendizaje y la enseñanza?}
-#'  \item{P3}{Están los cursos de laboratorio al día?}
-#' \item{Alternativas de repuestas}{Las respuestas eran alternativas numeradas de 1, completamente en desacuerdo hasta el 5, completamente de acuedo}
-#'  }
+#' Respuestas de 30 estudiantes a tres preguntas sobre calidad educativa usando
+#' una escala Likert. Las preguntas evalúan la disponibilidad de equipo de simulación,
+#' módulos computarizados y actualización de cursos de laboratorio.
 #'
 #' @docType data
 #'
 #' @usage data(LIKERT_DATA)
 #'
-#' @format An object of class data frame
+#' @format Un data frame con 30 filas y 3 columnas:
+#' \describe{
+#'   \item{P1}{Respuesta a la pregunta 1: "¿Tenemos equipo de simulación adecuado para practicar?". Escala numérica 1-5, donde 1 = completamente en desacuerdo, 5 = completamente de acuerdo. Numérico (entero).}
+#'   \item{P2}{Respuesta a la pregunta 2: "¿Disponemos de módulos computarizados adecuados para el aprendizaje y la enseñanza?". Escala numérica 1-5, donde 1 = completamente en desacuerdo, 5 = completamente de acuerdo. Numérico (entero).}
+#'   \item{P3}{Respuesta a la pregunta 3: "¿Están los cursos de laboratorio al día?". Escala numérica 1-5, donde 1 = completamente en desacuerdo, 5 = completamente de acuerdo. Numérico (entero).}
+#' }
 #'
-#' @keywords  datasets
+#' @source Encuesta a 30 estudiantes sobre infraestructura educativa.
+#' Datos no publicados.
+#'
 #' @examples
+#' data(LIKERT_DATA)
 #' head(LIKERT_DATA)
+#' library(ggplot2)
+#' # Convertir datos a formato largo para visualización
+#' likert_long <- reshape2::melt(LIKERT_DATA)
+#' ggplot(likert_long, aes(x = variable, y = value)) +
+#'   geom_boxplot() +
+#'   theme_minimal()
+#'
+#' @keywords datasets
+#'
 "LIKERT_DATA"

@@ -3,22 +3,37 @@
 \docType{data}
 \name{Camas_Hospital}
 \alias{Camas_Hospital}
-\title{Camas_Hospital}
-\format{El archivo incluye 4 columnas con 134 filas
+\title{Camas de Hospital por País}
+\format{
+Un data frame con 134 filas y 4 columnas:
 \describe{
- \item{Pais}{Paises del mundo}
- \item{Year}{El año}
- \item{Poblacion}{El tamaño poblacional}
- \item{Camas}{El número de camas por 1,000 personas}
- }
- Data del "World Health Organization", supplementado por información de los paises.}
+  \item{Pais}{Nombre del país. Carácter.}
+  \item{Year}{Año del registro. Numérico (entero).}
+  \item{Poblacion}{Tamaño de la población del país. Numérico (entero o doble).}
+  \item{Camas}{Número de camas de hospital por 1,000 personas. Numérico (doble).}
+}
+}
+\source{
+Organizacion Mundial de la Salud (OMS). Indicador del Banco
+Mundial: SH.MED.BEDS.ZS.
+\url{https://data.worldbank.org/indicator/SH.MED.BEDS.ZS}
+}
 \usage{
 data(Camas_Hospital)
 }
 \description{
-Camas_Hospital
+Número de camas de hospital por 1,000 habitantes en diferentes países del mundo.
+Los datos provienen de la Organización Mundial de la Salud (OMS) y fueron
+suplementados con información de los países correspondientes.
 }
 \examples{
+data(Camas_Hospital)
 head(Camas_Hospital)
+library(ggplot2)
+ggplot(Camas_Hospital, aes(x = Year, y = Camas, color = Pais)) +
+  geom_line() +
+  theme_minimal() +
+  theme(legend.position = "none")
+
 }
 \keyword{datasets}

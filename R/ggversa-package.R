@@ -1,0 +1,50 @@
+#' ggversa: Conjuntos de Datos para 'Graficas Versatiles con ggplot2'
+#'
+#' Una coleccion de conjuntos de datos para el libro "Graficas versatiles
+#' con ggplot: Analisis visuales de datos", por Raymond L. Tremblay y
+#' Julian Hernandez-Serrano. Incluye datos de ecologia, salud publica,
+#' educacion, economia y biodiversidad para la ensenanza de
+#' visualizacion de datos con 'ggplot2'.
+#'
+#' @section Conjuntos de datos de ecologia:
+#' \describe{
+#'   \item{\code{\link{Anolis}}}{Datos de lagartijas Anolis en transectos}
+#'   \item{\code{\link{caladeniavalida}}}{Orquidea Caladenia valida en peligro de extincion}
+#'   \item{\code{\link{CypripediumA}}}{Orquidea Cypripedium acaule de Ontario}
+#'   \item{\code{\link{dipodium}}}{Orquideas Dipodium de Australia}
+#'   \item{\code{\link{ElphickBirdData}}}{Datos de aves acuaticas}
+#'   \item{\code{\link{Godwits}}}{Datos de aves limicolas}
+#'   \item{\code{\link{Lelto}}}{Orquidea Lepanthes eltoroensis de Puerto Rico}
+#'   \item{\code{\link{SparrowsElphick}}}{Datos de gorriones}
+#'   \item{\code{\link{VegSamplesV1}}}{Muestreo de vegetacion}
+#' }
+#'
+#' @section Conjuntos de datos de salud:
+#' \describe{
+#'   \item{\code{\link{Camas_Hospital}}}{Camas de hospital por pais}
+#'   \item{\code{\link{PartosInfantes}}}{Mortalidad infantil y materna}
+#'   \item{\code{\link{Razon_mortandad}}}{Mortalidad infantil por pais}
+#'   \item{\code{\link{Tiroide}}}{Datos de tiroides en EEUU}
+#'   \item{\code{\link{PIB_vs_Salud}}}{PIB vs. gasto en salud}
+#' }
+#'
+#' @section Conjuntos de datos de economia y educacion:
+#' \describe{
+#'   \item{\code{\link{Crecimiento_domestico_bruto}}}{Crecimiento del PIB}
+#'   \item{\code{\link{Edu_Salud_Gastos_GDP}}}{Gastos en educacion y salud}
+#'   \item{\code{\link{Educacion_Ninas}}}{Educacion de ninas por pais}
+#'   \item{\code{\link{Internet2}}}{Uso de internet en America Latina}
+#'   \item{\code{\link{PBI}}}{Producto bruto interno per capita}
+#'   \item{\code{\link{PIB_vs_Alfabetismo}}}{PIB vs. alfabetismo}
+#' }
+#'
+#' @section Conjuntos de datos demograficos y climaticos:
+#' \describe{
+#'   \item{\code{\link{ASBESTOS_QUEBEC}}}{Temperatura en Asbestos, Quebec}
+#'   \item{\code{\link{MORELIA.MICH.Tmin}}}{Temperatura en Morelia, Mexico}
+#'   \item{\code{\link{Pop_PR}}}{Poblacion de Puerto Rico}
+#'   \item{\code{\link{LIKERT_DATA}}}{Datos de encuesta Likert}
+#' }
+#'
+#' @keywords internal
+"_PACKAGE"

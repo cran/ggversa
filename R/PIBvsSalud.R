@@ -1,24 +1,26 @@
-#' PIB_vs_Salud
+#' Producto Interno Bruto en Salud versus Esperanza de Vida
 #'
-#'Los datos provienen de http://globaledge.msu.edu.
+#' Datos que relacionan el gasto en salud como porcentaje del producto interno bruto (PIB)
+#' con la esperanza de vida al nacer en 20 países.
 #'
-#' Los datos representan el porcentaje de producto bruto dedicado a la salud por diferentes paises
-#' y un indice de salus que es la esperanza de vida de un niño al nacer.
+#' @format Un data frame con 20 filas y 3 columnas:
+#' \describe{
+#'   \item{Pais}{character: nombre del país}
+#'   \item{Porcentaje_PIB_Salud}{numeric: porcentaje del gasto público en salud respecto al PIB (\%)}
+#'   \item{Esperanza_vida}{numeric: esperanza de vida al nacer (años)}
+#' }
 #'
-#'
-#' Pais: Los paises en el archivo de datos
-#'
-#' Porcentaje_PIB_Salud: El porcentaje del gasto publico del Producto Interior Bruto dedicado a la salud por el pais
-#'
-#'Esperanza_vida: La esperanza de vida de un niño o niña que nace en este pais
+#' @source globalEDGE, Michigan State University.
+#' Indicadores de gasto en salud y esperanza de vida.
+#' \url{https://globaledge.msu.edu/}
 #'
 #' @docType data
 #'
 #' @usage data(PIB_vs_Salud)
 #'
-#' @format An object of class data frame
+#' @keywords datasets
 #'
-#' @keywords  datasets
 #' @examples
 #' head(PIB_vs_Salud)
+#'
 "PIB_vs_Salud"

@@ -3,22 +3,34 @@
 \docType{data}
 \name{PartosInfantes}
 \alias{PartosInfantes}
-\title{PartosInfantes}
-\format{El archivo incluye 5 columnas con 156 filas, los datos provienen del World Development Indicators, 07_22_2016.
+\title{Mortalidad Infantil y Materna}
+\format{
+Un data frame con 179 filas y 5 columnas:
 \describe{
- \item{NMI}{Número de Muertes de Infantes, Niños que mueren en el parto o natimuerto}
- \item{NMP}{Número de Muertes por Parto, las madres que mueren al parir}
- \item{GSPC}{El en Salud per Cápita, gasto aportado a la salud por persona}
- \item{Grupo}{Región del mundo}
- \item{Pais}{El nombre del pais}
- }}
+  \item{NMI}{numeric: número de muertes infantiles (niños que mueren en el parto o nacidos muertos)}
+  \item{NMP}{numeric: número de muertes maternas (madres que mueren durante el parto)}
+  \item{GSPC}{numeric: gasto en salud per cápita (USD)}
+  \item{Grupo}{character: región geográfica del mundo}
+  \item{Pais}{character: nombre del país}
+}
+}
+\source{
+Banco Mundial. Indicadores de Desarrollo Mundial, 2016.
+Mortalidad infantil (SP.DYN.IMRT.IN),
+mortalidad materna (SH.STA.MMRT), y
+gasto en salud per capita (SH.XPD.CHEX.PC.CD).
+\url{https://data.worldbank.org/}
+}
 \usage{
 data(PartosInfantes)
 }
 \description{
-PartosInfantes
+Datos de mortalidad infantil y materna de 179 países. Incluye información
+sobre muertes de infantes, muertes de madres durante el parto y gasto
+en salud per cápita de los Indicadores de Desarrollo Mundial 2016.
 }
 \examples{
 head(PartosInfantes)
+
 }
 \keyword{datasets}

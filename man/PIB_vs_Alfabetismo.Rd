@@ -3,20 +3,29 @@
 \docType{data}
 \name{PIB_vs_Alfabetismo}
 \alias{PIB_vs_Alfabetismo}
-\title{PIB_vs_Alfabetismo}
-\format{El archivo incluye 3 columnas con 20 filas
+\title{Producto Interno Bruto versus Alfabetismo en América Latina}
+\format{
+Un data frame con 20 filas y 3 columnas:
 \describe{
- \item{Pais}{Pais de Latino America}
- \item{Alfabetismo}{El porciento de alfabetismo}
- \item{Porciento_PIB}{El porciento del producto interior dedicado a la educación}
- }}
+  \item{Pais}{character: nombre del país de América Latina}
+  \item{Alfabetismo}{numeric: porcentaje de alfabetismo (\%)}
+  \item{Porciento_PIB}{numeric: porcentaje del PIB dedicado a educación (\%)}
+}
+}
+\source{
+Banco Mundial. Indicadores de Desarrollo Mundial.
+PIB per capita y tasa de alfabetismo (SE.ADT.LITR.ZS).
+\url{https://data.worldbank.org/}
+}
 \usage{
 data(PIB_vs_Alfabetismo)
 }
 \description{
-PIB_vs_Alfabetismo
+Datos que relacionan el producto interno bruto (PIB) dedicado a educación
+con los niveles de alfabetismo en 20 países de América Latina.
 }
 \examples{
 head(PIB_vs_Alfabetismo)
+
 }
 \keyword{datasets}

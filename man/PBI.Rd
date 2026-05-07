@@ -3,28 +3,39 @@
 \docType{data}
 \name{PBI}
 \alias{PBI}
-\title{Producto Bruto Interno}
-\format{An object of class data frame}
+\title{Crecimiento del Producto Bruto Interno Per Cápita}
+\format{
+Un data frame con 28 filas y 13 columnas:
+\describe{
+  \item{Pais}{character: nombre del país}
+  \item{X1990}{numeric: crecimiento PBI per cápita 1990 (anual \%)}
+  \item{X2000}{numeric: crecimiento PBI per cápita 2000 (anual \%)}
+  \item{X2006}{numeric: crecimiento PBI per cápita 2006 (anual \%)}
+  \item{X2007}{numeric: crecimiento PBI per cápita 2007 (anual \%)}
+  \item{X2008}{numeric: crecimiento PBI per cápita 2008 (anual \%)}
+  \item{X2009}{numeric: crecimiento PBI per cápita 2009 (anual \%)}
+  \item{X2010}{numeric: crecimiento PBI per cápita 2010 (anual \%)}
+  \item{X2011}{numeric: crecimiento PBI per cápita 2011 (anual \%)}
+  \item{X2012}{numeric: crecimiento PBI per cápita 2012 (anual \%)}
+  \item{X2013}{numeric: crecimiento PBI per cápita 2013 (anual \%)}
+  \item{X2014}{numeric: crecimiento PBI per cápita 2014 (anual \%)}
+  \item{X2015}{numeric: crecimiento PBI per cápita 2015 (anual \%)}
+}
+}
+\source{
+Banco Mundial, datos de cuentas nacionales y archivos de la OCDE.
+Indicador: NY.GDP.PCAP.KD.ZG (Crecimiento del PIB per capita, anual).
+\url{https://data.worldbank.org/indicator/NY.GDP.PCAP.KD.ZG}
+}
 \usage{
 data(PBI)
 }
 \description{
-Los datos son del siguiente sitio,Code	Indicator: NY.GDP.PCAP.KD.ZG
-Cada columna representa le crecimiento de un año al otro.
-GDP per capita growth (annual %)
-}
-\details{
-Annual percentage growth rate of GDP per capita based on constant local currency.
-
-Aggregates are based on constant 2010 U.S. dollars.
-
-GDP per capita is gross domestic product divided by midyear population.
-
-GDP at purchaser's prices is the sum of gross value added by all resident producers in the economy plus any product taxes and minus any subsidies not included in the value of the products.
-It is calculated without making deductions for depreciation of fabricated assets or for depletion and degradation of natural resources.
-World Bank national accounts data, and OECD National Accounts data files.
+Datos de crecimiento anual del producto bruto interno (PBI) per cápita para
+28 países. Cada columna representa la tasa de crecimiento anual del PBI per cápita.
 }
 \examples{
 head(PBI)
+
 }
 \keyword{datasets}

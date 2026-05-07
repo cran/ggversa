@@ -1,54 +1,45 @@
-#' Dipodium de la Reserva de Wombat, Victoria, Australia
+#' Orquídeas Dipodium de la Reserva Wombat, Victoria, Australia
 #'
-
+#' Datos de características morfológicas y reproductivas de dos especies de
+#' Dipodium (Dipodium pardalinum y D. roseum) de la Reserva Forestal Wombat.
+#' Estas son orquídeas micoheterótrófas sin clorofila que se desarrollan bajo
+#' árboles de Eucalyptus. Los datos fueron recolectados por RLT con colegas
+#' del Jardín Botánico de Melbourne durante una licencia sabática.
 #'
-#' Los datos representa características morfológicas y
-#' reproductiva de dos especies de Dipodium.
-#' Dipodium pardalinum y Dipodium roseum.
-#' Estos datos son de una planta terrestre sin clorofila.
-#' La planta tiene solamente una inflorescencia (no tiene hoja)
-#' que sale de la tierra. La hipótesis es que la orquídea
-#' adquiere sus nutrientes de hongos (micorriza) en el suelo,
-#' y que estas micorriza están recibiendo sus nutrientes de la
-#' raíces de los árboles de Eucalyptis.
-#'
-#' Estos datos fueron recolectado por RLT con colegas
-#' del Jardin Botanico de Melbourne en Australia
-#' durante una sabatica por RLT.
-#'
-#'@format El archivo incluye 4 columnas con 134 filas
+#' @format Un data frame con 1363 filas y 21 columnas:
 #' \describe{
-#'  \item{Tree Number}{El número del árbol}
-#'  \item{Tree species}{La especies de árbol, Eucalyptis}
-#'  \item{DBH}{El diametro del árbol al pecho}
-#'  \item{Plant number}{El número se la orquídea}
-#'  \item{Ramet number}{La numeración de la inflorescencia}
-#'  \item{Distance}{La distancia de la orquídea al árbol}
-#'  \item{Orientation}{La orientación de la orquidea relativo al árbol más cercano}
-#'  \item{Number_of_Flowers}{El número de flores en una inflorescencia}
-#'  \item{Height_Inflo}{La altura de la infloresencia}
-#'  \item{Herbivory}{Presencia o ausencia de herbivoría}
-#'  \item{RowPosition_NF}{Posición de la fila}
-#'  \item{Number_Flowers_position}{Posición de la flor en la infloresencia, donde 1 es la posición basal}
-#'  \item{Number_of_fruits}{El número de frutos}
-#'  \item{Perc_FR_set}{El proporción de frutos}
-#'  \item{pardalinum_or_roseum}{El nombre de las especies D. roseum y D. pardalinum}
-#'  \item{Fruit_position_effect}{la posición de frutos en la infloresencia}
-#'  \item{Frutos_si_o_no}{Presencia o auscencia de frutos}
-#'  \item{P_or_R_Infl_Lenght}{La altura de la inflorescencia}
-#'  \item{Num of fruits}{la cantidad de frutos}
-#'  \item{Species_Name}{El nombre de las especies D. roseum y D. pardalinum}
-#'  \item{Cardinal orientation}{posición cardenal}
-#'  }
+#'   \item{`Tree Number`}{numeric: número identificador del árbol huésped}
+#'   \item{`Tree species`}{character: especie del árbol (Eucalyptus)}
+#'   \item{DBH}{numeric: diámetro del árbol a la altura del pecho (cm)}
+#'   \item{`Plant number`}{numeric: número de identificación de la orquídea}
+#'   \item{`Ramet number`}{numeric: número de la ramet (inflorescencia)}
+#'   \item{Distance}{numeric: distancia de la orquídea al árbol más cercano (m)}
+#'   \item{Orientation}{character: orientación relativa al árbol más cercano}
+#'   \item{Number_of_Flowers}{numeric: cantidad de flores en la inflorescencia}
+#'   \item{Height_Inflo}{numeric: altura de la inflorescencia (cm)}
+#'   \item{Herbivory}{character: presencia o ausencia de herbivoría}
+#'   \item{RowPosition_NF}{numeric: posición en la fila}
+#'   \item{Number_Flowers_position}{numeric: posición de la flor en la inflorescencia (1=basal)}
+#'   \item{Number_of_fruits}{numeric: cantidad de frutos}
+#'   \item{Perc_FR_set}{numeric: proporción de frutos (\%)}
+#'   \item{pardalinum_or_roseum}{character: especie (D. pardalinum o D. roseum)}
+#'   \item{Fruit_position_effect}{numeric: posición del fruto en la inflorescencia}
+#'   \item{Frutos_si_o_no}{character: presencia o ausencia de frutos}
+#'   \item{P_or_R_Infl_Lenght}{numeric: altura de la inflorescencia (cm)}
+#'   \item{`Num of fruits`}{numeric: cantidad total de frutos}
+#'   \item{Species_Name}{character: nombre de la especie (D. roseum o D. pardalinum)}
+#'   \item{`Cardinal orientation`}{character: orientación cardinal (N, S, E, O)}
+#' }
 #'
+#' @source Datos recolectados por Raymond L. Tremblay con colegas
+#' del Jardin Botanico Real de Melbourne, Australia.
+#' Reserva Forestal de Wombat, Victoria. Datos no publicados.
 #'
 #' @docType data
 #'
 #' @usage data(dipodium)
 #'
-#' @format An object of class data frame
-#'
-#' @keywords  datasets
+#' @keywords datasets
 #'
 #' @examples
 #' head(dipodium)

@@ -1,56 +1,53 @@
-#' Anolis
+#' Datos de Lagartos Anolis de Torres de Transectos
 #'
-#'Aqui esta el texto integral de la descripción de los datos
+#' Datos de distribución vertical y abundancia relativa de especies de lagartos
+#' Anolis recolectados mediante transectos en torres entre 1989 y 1992.
 #'
-#'Transects are conducted to note the vertical distribution and
-#'relative abundance of anole species.
-#'Data permit the calculation of average sighting distance
-#'for each species which is used in the final calculation of abundance.
+#' Los transectos fueron conducidos caminando lentamente hacia arriba en cada
+#' torre y registrando información de cada lagarto observado: especie, sexo/edad,
+#' altura de la percha, sustrato de percha, diámetro de percha y distancia desde
+#' la línea central. Se realizaron tres transectos replicados durante cada estación,
+#' con un muestreo en cada uno de tres momentos del día (mañana, mediodía y
+#' tarde).
 #'
-#'Los datos fueron recolectado entre 1989-01-09 hasta el 1992-10-23.
-#'
-#'Transects are conducted by slowly walking up each tower and recording
-#'the following information for each lizard observed: species, sex/age,
-#'perch height, perch substrate, perch diameter, and distance from centerline.
-#'Three replicate transects are conducted during each season;
-#'one survey at each of three times of day (morning, midday, and late afternoon).
-#'
-#' STUDY: El nombre del estudios (marca y recaptura)
-#'
-#' Survey_Site: El sitio de muestreo
-#'
-#' LOCATION: El area de muestreo
-#'
-#' TIME: El tiempo de la recolección de datos
-#'
-#' DATE: La fecha del muestreo
-#'
-#' SEASON: Epoca del año
-#'
-#' SPECIES: Especies de lagarto
-#'
-#' SEX_AGE: El sexo o la edad de los lagartos (Female, Juvenil, Male), nota que en los juvenil no se puede determinar el sexo
-#'
-#' HEIGHT: La altura sobre el nivel del suelo donde se observo el lagarto
-#'
-#' DISTANCE_FROM_CENTERLINE: Distancia del centro de la linea
-#'
-#' PERCH_SUBSTRATE: El tipo de substrato/percha donde se encuentra el lagarto
-#'
-#' PERCH_DIAMETER: El diametro del substrato/percha
-#'
-#' SVL: Snout-Vent Lenght del lagarto
-#'
-#' TAIL: el largo de la cola del lagarto
+#' Los datos permiten calcular la distancia promedio de avistamiento para cada
+#' especie, que se utiliza en el cálculo final de abundancia.
 #'
 #' @docType data
 #'
 #' @usage data(Anolis)
 #'
-#' @format An object of class data frame
+#' @format Un data frame con 503 filas y 15 columnas:
+#' \describe{
+#'   \item{STUDY}{Nombre del estudio (marca y recaptura). Carácter.}
+#'   \item{Survey_Site}{Sitio de muestreo. Carácter.}
+#'   \item{LOCATION}{Área de muestreo. Carácter.}
+#'   \item{TIME}{Momento de la recolección de datos (mañana, mediodía, tarde). Carácter.}
+#'   \item{DATE}{Fecha del muestreo. Tipo fecha o carácter.}
+#'   \item{SEASON}{Época del año. Carácter.}
+#'   \item{SPECIES}{Especies de lagarto Anolis observadas. Carácter.}
+#'   \item{SEX_AGE}{Sexo o edad del lagarto (Female, Juvenil, Male). Carácter. En juveniles no se puede determinar el sexo.}
+#'   \item{HEIGHT}{Altura sobre el nivel del suelo donde fue observado el lagarto (en metros). Numérico (doble).}
+#'   \item{DISTANCE_FROM_CENTERLINE}{Distancia horizontal desde la línea central (en metros). Numérico (doble).}
+#'   \item{PERCH_SUBSTRATE}{Tipo de sustrato o percha donde se encuentra el lagarto. Carácter.}
+#'   \item{PERCH_DIAMETER}{Diámetro del sustrato o percha (en centímetros). Numérico (doble).}
+#'   \item{WEIGHT}{Peso del lagarto (en gramos). Numérico (doble).}
+#'   \item{SVL}{Longitud Hocico-Cloaca (Snout-Vent Length) del lagarto en milímetros. Numérico (doble).}
+#'   \item{TAIL}{Largo de la cola del lagarto en milímetros. Numérico (doble).}
+#' }
 #'
-#' @keywords  datasets
+#' @source Datos del programa Big Grid, Estacion Experimental de El Verde,
+#' Bosque Nacional El Yunque, Puerto Rico.
 #'
 #' @examples
+#' data(Anolis)
 #' head(Anolis)
+#' library(ggplot2)
+#' ggplot(Anolis, aes(x = HEIGHT, y = SVL, color = SPECIES)) +
+#'   geom_point() +
+#'   facet_wrap(~ SEASON) +
+#'   theme_minimal()
+#'
+#' @keywords datasets
+#'
 "Anolis"

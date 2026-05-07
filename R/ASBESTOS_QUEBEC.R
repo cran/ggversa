@@ -1,23 +1,35 @@
-#' Asbestos_Quebec
+#' Temperatura en Asbesto, Quebec, Canadá
 #'
-#'Los datos son temperatura minima y maxima del
-#' pueblo de Asbestos, Quebec, Canada del 1948 al 1987.
-#'@format El archivo incluye 5 columnas con 466 filas
-#' \describe{
-#'  \item{Fecha}{La fecha en año y mes}
-#'  \item{Year}{El año}
-#'  \item{Mes}{El mes del año}
-#'  \item{Temp_Prom_Max}{El promedio de la temperatura maxima en el mes}
-#'  \item{Temp_Prom_Min}{El promedio de la temperatura minima en el mes}
-#'  }
+#' Datos de temperatura diaria promedio máxima y mínima registrados en Asbesto,
+#' Quebec, Canadá durante el período 1948-1987. Los datos contienen observaciones
+#' mensuales de temperatura que pueden utilizarse para análisis de tendencias
+#' climáticas y variabilidad temporal.
 #'
 #' @docType data
 #'
 #' @usage data(ASBESTOS_QUEBEC)
 #'
-#' @format An object of class data frame
+#' @format Un data frame con 466 filas y 5 columnas:
+#' \describe{
+#'   \item{Year}{Año de la observación. Numérico (entero).}
+#'   \item{Mes}{Mes de la observación (1-12). Numérico (entero).}
+#'   \item{Temp_Prom_Max}{Temperatura promedio máxima en grados Celsius. Numérico (doble).}
+#'   \item{Temp_Prom_Min}{Temperatura promedio mínima en grados Celsius. Numérico (doble).}
+#'   \item{Fecha}{Fecha de la observación. Carácter o formato de fecha.}
+#' }
 #'
-#' @keywords  datasets
+#' @source Environment and Climate Change Canada. Datos climaticos historicos.
+#' \url{https://climate.weather.gc.ca/}
+#'
 #' @examples
+#' data(ASBESTOS_QUEBEC)
 #' head(ASBESTOS_QUEBEC)
+#' library(ggplot2)
+#' ggplot(ASBESTOS_QUEBEC, aes(x = Mes, y = Temp_Prom_Max)) +
+#'   geom_point() +
+#'   facet_wrap(~ Year) +
+#'   theme_minimal()
+#'
+#' @keywords datasets
+#'
 "ASBESTOS_QUEBEC"

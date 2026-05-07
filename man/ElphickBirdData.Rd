@@ -3,34 +3,111 @@
 \docType{data}
 \name{ElphickBirdData}
 \alias{ElphickBirdData}
-\title{ElphickBirdData}
-\format{An object of class data frame}
+\title{Datos de Aves Acuáticas de Elphick}
+\format{
+Un data frame con 2035 filas y 66 columnas:
+\describe{
+  \item{CENSUS}{Número de censo. Numérico.}
+  \item{YEAR}{Año del censo. Numérico.}
+  \item{DATE}{Fecha del censo. Carácter o tipo fecha.}
+  \item{Data}{Código de datos. Carácter.}
+  \item{DATE.1}{Fecha alternativa. Carácter o tipo fecha.}
+  \item{SITE}{Sitio de muestreo. Carácter.}
+  \item{BLOCK}{Bloque de muestreo. Carácter.}
+  \item{FIELD}{Campo de muestreo. Carácter.}
+  \item{FIELDNEW}{Campo nuevo. Carácter.}
+  \item{CHECK}{Verificación. Carácter.}
+  \item{AREA}{Área de muestreo (en unidades de hectáreas o km²). Numérico.}
+  \item{SPTREAT}{Tratamiento especial. Carácter.}
+  \item{DEPTH}{Profundidad del agua (en centímetros o metros). Numérico.}
+  \item{TUSW}{Conteo de especie de pato silbador de cola larga. Numérico.}
+  \item{GWFG}{Conteo de ganso de frente blanca. Numérico.}
+  \item{WHGO}{Conteo de ganso de frente blanca. Numérico.}
+  \item{CAGO}{Conteo de ganso canadiense. Numérico.}
+  \item{MALL}{Conteo de ánade real. Numérico.}
+  \item{GADW}{Conteo de pato jilguero. Numérico.}
+  \item{GWTE}{Conteo de cerceta de alas verdes. Numérico.}
+  \item{CITE}{Conteo de cerceta cinérea. Numérico.}
+  \item{UNTE}{Conteo de cerceta sin identificar. Numérico.}
+  \item{AMWI}{Conteo de pato silbador americano. Numérico.}
+  \item{NOPI}{Conteo de pato buzo sin espinas. Numérico.}
+  \item{NOSH}{Conteo de pato buzo norteño. Numérico.}
+  \item{RIDU}{Conteo de pato buzo pechirrojo. Numérico.}
+  \item{CANV}{Conteo de lomo blanco. Numérico.}
+  \item{BUFF}{Conteo de pato buzo leonado. Numérico.}
+  \item{WODU}{Conteo de pato ojirojo madera. Numérico.}
+  \item{RUDU}{Conteo de pato buzo enlutado. Numérico.}
+  \item{EUWI}{Conteo de silbador de vientre blanco. Numérico.}
+  \item{UNDU}{Conteo de pato buzo sin identificar. Numérico.}
+  \item{PBGB}{Conteo de somorgujo de cabeza negra. Numérico.}
+  \item{SORA}{Conteo de rascador manchado. Numérico.}
+  \item{COOT}{Conteo de focha americana. Numérico.}
+  \item{COMO}{Conteo de cormorán común. Numérico.}
+  \item{AMBI}{Conteo de avetoro americano. Numérico.}
+  \item{BCNH}{Conteo de garza negra. Numérico.}
+  \item{GBHE}{Conteo de garza real. Numérico.}
+  \item{SNEG}{Conteo de garceta nívea. Numérico.}
+  \item{GREG}{Conteo de garceta gris. Numérico.}
+  \item{WFIB}{Conteo de ibis blanco. Numérico.}
+  \item{SACR}{Conteo de grulla trompetera. Numérico.}
+  \item{AMAV}{Conteo de gavilán de Coopero. Numérico.}
+  \item{BNST}{Conteo de aguililla negra. Numérico.}
+  \item{BBPL}{Conteo de frailecillo atlántico. Numérico.}
+  \item{KILL}{Conteo de chorlitejo silbador. Numérico.}
+  \item{LBCU}{Conteo de correlimos mínimo. Numérico.}
+  \item{GRYE}{Conteo de chorlito de dorado mayor. Numérico.}
+  \item{LEYE}{Conteo de chorlito de dorado menor. Numérico.}
+  \item{LBDO}{Conteo de ostra azuleja. Numérico.}
+  \item{SNIP}{Conteo de agachadiza común. Numérico.}
+  \item{DUNL}{Conteo de correlimos dorsirrojo. Numérico.}
+  \item{WESA}{Conteo de correlimos occidental. Numérico.}
+  \item{LESA}{Conteo de correlimos menos. Numérico.}
+  \item{PEEP}{Conteo de correlimos de Peep. Numérico.}
+  \item{RUFF}{Conteo de combatiente. Numérico.}
+  \item{UNSH}{Conteo de ave costera sin identificar. Numérico.}
+  \item{RBGU}{Conteo de gaviota de anillo rojo. Numérico.}
+  \item{HEGU}{Conteo de gaviota arenisca. Numérico.}
+  \item{CAGU}{Conteo de gaviota gris. Numérico.}
+  \item{GUSP}{Conteo de gaviota sin identificar. Numérico.}
+  \item{WATERFWL}{Conteo total de aves acuáticas (patos y gansos). Numérico.}
+  \item{LLWADERS}{Conteo total de aves de ribera de larga cola. Numérico.}
+  \item{SHOREBDS}{Conteo total de aves de ribera. Numérico.}
+  \item{AQBIRDS}{Conteo total de aves acuáticas. Numérico.}
+}
+}
+\source{
+Datos usados con permiso de Alain F. Zuur. Disponibles en
+\url{https://www.highstat.com/}
+}
 \usage{
 data(ElphickBirdData)
 }
 \description{
-Con el permiso de Alain F Zuur usamos los datos siguiente
+Datos de censos de aves acuáticas y litorales recolectados en múltiples sitios
+durante varios años. Los datos se utilizan con permiso de Alain F. Zuur y
+fueron descargados de www.highstat.com (Appendix S1 Supporting Information).
 }
 \details{
-Toda la información es exactamente como aparece en el archivo original de Zuur, Ieno y Elphick 2010.
-"A protocol for data exploration to avoid common statistical problems" Methods in Ecology and Evolution 1: 3-14.
-
-Estaré solamente explicando el nombre de las columnas que estan relevante a los gráficas producidas.
-
-Sugiero que tambien evaluan el siguiente libro para más ejemplos como tomar en cuenta los supuestos de las pruebas.
-"A Beginner's Guide to Data Exploration and Visualisation with R".
-por Elena N Ieno y Alain F Zuur. 2015. Publicado por Highland Statistics Ltd.
-
-Los datos fueron bajado del siguiente sitio de Web en al "Appendix S1 (Supporting Information), www.highstat.com
-
-En este archivo hay 67 columnas de datos con 2035 lineas.
-Los datos usados en los ejercicios del libro son limitado a las siguientes columnas
-
-AREA: El area de muestreo
-
-AQBIRDS: Número de pájaros acuáticos
+Este conjunto de datos contiene información detallada que permite el análisis
+de patrones ecológicos de aves acuáticas y de ribera. Se recomienda revisar
+el libro "A Beginner's Guide to Data Exploration and Visualisation with R"
+de Elena N. Ieno y Alain F. Zuur (2015, Highland Statistics Ltd) para obtener
+más ejemplos sobre cómo considerar los supuestos de las pruebas estadísticas.
 }
 \examples{
+data(ElphickBirdData)
 head(ElphickBirdData)
+library(ggplot2)
+ggplot(ElphickBirdData, aes(x = AREA, y = AQBIRDS)) +
+  geom_point() +
+  theme_minimal()
+
+}
+\references{
+Zuur AF, Ieno EN, Elphick CS (2010). "A protocol for data exploration to avoid
+common statistical problems." Methods in Ecology and Evolution 1: 3-14.
+
+Ieno EN, Zuur AF (2015). "A Beginner's Guide to Data Exploration and
+Visualisation with R." Highland Statistics Ltd.
 }
 \keyword{datasets}

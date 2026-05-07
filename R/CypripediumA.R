@@ -1,38 +1,38 @@
-#' CypripediumA
+#' Medidas de Orquídea Cypripedium acaule
 #'
-#'
-#'Los datos son de la especies de orquidea terrestre Cypripedium acaule.
-#'Los datos fueron recolectado en el area de North Bay, Ontario, Canada
-#'por Dr. Peter Norsko y sus estudiantes.
-#'
-#' Orchid_no: El numero de la planta
-#'
-#' Forest_Wetland: Si la planta esta localizada en el bosque o en un humedal
-#'
-#' Part_of_clump: Si la planta es parte de grupo de individuos o es solitaria
-#'
-#' Total_height_cm: La altura de la planta de la base hasta la flor
-#'
-#' Leaf_1_length_mm: El largo de la primera hoja en millimetros.
-#' La planta tiene al maximo dos hojas
-#'
-#' Leaf_2_length_mm: El largo de la segunda hoja en millimetros,
-#'  la hoja más cercana al suelo
-#'
-#' Dorsal_petal_length_mm: El largo del petalo dorsal en millimetros
-#'
-#' Lip_length_mm: El largo del labello en millimetros
-#'
-#' Lip_width_mm: El ancho del labello en millimetros
-#'
+#' Datos de medidas morfológicas de la orquídea terrestre Cypripedium acaule
+#' recolectados en el área de North Bay, Ontario, Canadá. Los datos fueron
+#' recolectados por el Dr. Peter Nosko, Nipissing University, y sus estudiantes.
 #'
 #' @docType data
 #'
 #' @usage data(CypripediumA)
 #'
-#' @format An object of class data frame
+#' @format Un data frame con 82 filas y 9 columnas:
+#' \describe{
+#'   \item{Orchid_no}{Número de identificación de la planta. Numérico (entero).}
+#'   \item{Forest_Wetland}{Tipo de hábitat donde se localiza la planta (bosque o humedal). Carácter.}
+#'   \item{Part_of_clump}{Indicador de si la planta es parte de un grupo de individuos o es solitaria. Carácter o lógico.}
+#'   \item{Total_height_cm}{Altura total de la planta desde la base hasta la flor, en centímetros. Numérico (doble).}
+#'   \item{Leaf_1_length_mm}{Largo de la primera hoja en milímetros. La planta tiene un máximo de dos hojas. Numérico (doble).}
+#'   \item{Leaf_2_length_mm}{Largo de la segunda hoja en milímetros, la hoja más cercana al suelo. Numérico (doble).}
+#'   \item{Dorsal_petal_length_mm}{Largo del pétalo dorsal en milímetros. Numérico (doble).}
+#'   \item{Lip_length_mm}{Largo del labelo (labium) en milímetros. Numérico (doble).}
+#'   \item{Lip_width_mm}{Ancho del labelo en milímetros. Numérico (doble).}
+#' }
 #'
-#' @keywords  datasets
+#' @source Datos recolectados por Dr. Peter Nosko, Nipissing University,
+#' North Bay, Ontario, Canada. Datos no publicados.
+#'
 #' @examples
+#' data(CypripediumA)
 #' head(CypripediumA)
+#' library(ggplot2)
+#' ggplot(CypripediumA, aes(x = Total_height_cm, y = Lip_length_mm,
+#'                           color = Forest_Wetland)) +
+#'   geom_point() +
+#'   theme_minimal()
+#'
+#' @keywords datasets
+#'
 "CypripediumA"

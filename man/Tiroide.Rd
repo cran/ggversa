@@ -3,30 +3,31 @@
 \docType{data}
 \name{Tiroide}
 \alias{Tiroide}
-\title{Tiroide}
-\format{An object of class data frame}
+\title{Casos de Enfermedad Tiroidea y Mortalidad en EE.UU.}
+\format{
+Un data frame con 76 filas y 3 columnas:
+\describe{
+  \item{Year}{numeric: año de registro}
+  \item{Cases}{numeric: número de nuevos casos de enfermedad tiroidea}
+  \item{Rate}{numeric: tasa de mortalidad por 100,000 habitantes}
+}
+}
+\source{
+Instituto Nacional del Cancer, Programa de Vigilancia,
+Epidemiologia y Resultados Finales (SEER).
+\url{https://seer.cancer.gov/statfacts/html/thyro.html}
+}
 \usage{
 data(Tiroide)
 }
 \description{
-Se utilizarán datos sobre la cantidad de
-nuevos casos de personas con problema de
-la tiroide en EE UU y la mortandad por
-cada 100,000 habitantes.
-Los datos provienen del National Cancer
-Institute; Surveillance, Epidemiology and
-End Results Program,
-}
-\details{
-Los datos de las tres columnas son
-Año del muestreo,
-Los casos nuevos o posteriomente registrado y
-la razón de tiroide por 100,000 habitantes.
+Datos sobre la cantidad de nuevos casos de enfermedad tiroidea y la tasa de
+mortalidad por cada 100,000 habitantes en Estados Unidos. Los datos provienen
+del Programa de Vigilancia, Epidemiología y Resultados Finales (SEER) del
+Instituto Nacional del Cáncer.
 }
 \examples{
 head(Tiroide)
-}
-\references{
-seer.cancer.gov
+
 }
 \keyword{datasets}

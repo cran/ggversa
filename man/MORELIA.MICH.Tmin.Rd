@@ -3,25 +3,30 @@
 \docType{data}
 \name{MORELIA.MICH.Tmin}
 \alias{MORELIA.MICH.Tmin}
-\title{MORELIA.MICH.Tmin}
-\format{An object of class data frame}
+\title{Temperatura Mínima Diaria de Morelia, Michoacán}
+\format{
+Un data frame con 23552 filas y 4 columnas:
+\describe{
+  \item{Mes}{numeric: mes del año (1-12)}
+  \item{Dia}{numeric: día del mes (1-31)}
+  \item{Year}{numeric: año de observación (1947-2012)}
+  \item{Tmin}{numeric: temperatura mínima en grados Celsius}
+}
+}
+\source{
+CLICOM climate database, CICESE, Mexico.
+  Zhu & Lettenmaier (2007), J. Climate 20:1936-1946.
+  \doi{10.1175/JCLI4086.1}
+}
 \usage{
 data(MORELIA.MICH.Tmin)
 }
 \description{
-Los datos provienen de clicom-mex.cicese.mx.
-La temperatura minima de cada día desde Noviembre 1947 a marzo 2012.
-}
-\details{
-Dia: El dia del mes de muestreo
-
-Mes: El mes del muestreo
-
-Year: El año de muestreo
-
-Tmin: La temperatura mínima del día
+Datos de temperatura mínima diaria registrados en Morelia, Michoacán, México,
+desde noviembre de 1947 hasta marzo de 2012.
 }
 \examples{
 head(MORELIA.MICH.Tmin)
+
 }
 \keyword{datasets}

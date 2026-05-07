@@ -1,30 +1,46 @@
-#' VegSamplesV1
+#' Datos de Muestreo de Vegetación
 #'
-#'Con el permiso de Alain F Zuur usamos los datos
+#' Datos de muestreo de vegetación de 60 sitios. Incluye información sobre
+#' cobertura de especies, altura y densidad de vegetación. Datos utilizados
+#' con permiso de Zuur, Ieno y Elphick (2010). Fuente: highstat.com
 #'
+#' @format Un data frame con 60 filas y 19 columnas:
+#' \describe{
+#'   \item{Year}{numeric: año de muestreo}
+#'   \item{Site}{character: identificación del sitio}
+#'   \item{UniversalPlotName}{character: nombre universal del parcela}
+#'   \item{Banded}{numeric: indicador de banding}
+#'   \item{PtCountsum}{numeric: suma de conteo de puntos}
+#'   \item{Avgmaxht}{numeric: altura máxima promedio (m)}
+#'   \item{Avgdens}{numeric: densidad promedio}
+#'   \item{ht.thatch}{numeric: altura de paja}
+#'   \item{S.patens}{numeric: cobertura de Spartina patens (\%)}
+#'   \item{Distichlis}{numeric: cobertura de Distichlis (\%)}
+#'   \item{S.alternifloraShort}{numeric: cobertura de Spartina alterniflora corta (\%)}
+#'   \item{S.alternifloraTall}{numeric: cobertura de Spartina alterniflora alta (\%)}
+#'   \item{Juncus}{numeric: cobertura de Juncus (\%)}
+#'   \item{Bare}{numeric: cobertura desnuda (\%)}
+#'   \item{Other}{numeric: cobertura de otras especies (\%)}
+#'   \item{Phragmites}{numeric: cobertura de Phragmites (\%)}
+#'   \item{Shrub}{numeric: cobertura de arbustos (\%)}
+#'   \item{Tallsedge}{numeric: cobertura de juncos altos (\%)}
+#'   \item{Water}{numeric: cobertura de agua (\%)}
+#' }
 #'
-#'Toda la información es exactamente como aparece en el archivo original de Zuur, Ieno y Elphick 2010.
-#'"A protocol for data exploration to avoid common statistical problems" Methods in Ecology and Evolution 1: 3-14.
+#' @source Datos usados con permiso de Alain F. Zuur. Disponibles en
+#' \url{https://www.highstat.com/}
 #'
-#'Estaré solamente explicando el nombre de las columnas que estan relevante a los gráficas producidas.
-#'
-#' Sugiero que tambien evaluan el siguiente libro para más ejemplos como tomar en cuenta los supuestos de las pruebas.
-#' "A Beginner's Guide to Data Exploration and Visualisation with R".
-#' por Elena N Ieno y Alain F Zuur. 2015. Publicado por Highland Statistics Ltd.
-#'
-#' Los datos fueron bajado del siguiente sitio de Web en al "Appendix S1 (Supporting Information),
-#' www.highstat.com
-#'
-#' En el archivo hay 19 columnas y 60 filas
-#' Los datos usados en los ejercicios del libro son limitado a las siguientes columnas
+#' @references Zuur AF, Ieno EN & Elphick CS. 2010.
+#'   A protocol for data exploration to avoid common statistical problems.
+#'   Methods in Ecology and Evolution 1: 3-14.
 #'
 #' @docType data
 #'
 #' @usage data(VegSamplesV1)
 #'
-#' @format An object of class data frame
+#' @keywords datasets
 #'
-#' @keywords  datasets
 #' @examples
 #' head(VegSamplesV1)
+#'
 "VegSamplesV1"

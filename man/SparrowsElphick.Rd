@@ -3,15 +3,47 @@
 \docType{data}
 \name{SparrowsElphick}
 \alias{SparrowsElphick}
-\title{SparrowsElphick}
-\format{An object of class data frame}
+\title{Datos Morfométricos de Gorriones (Elphick)}
+\format{
+Un data frame con 1295 filas y 16 columnas:
+\describe{
+  \item{wingcrd}{numeric: longitud del ala cordal (mm)}
+  \item{flatwing}{numeric: longitud del ala plana (mm)}
+  \item{tarsus}{numeric: longitud del tarsus (mm)}
+  \item{head}{numeric: longitud de la cabeza (mm)}
+  \item{culmen}{numeric: longitud del culmen (mm)}
+  \item{nalospi}{numeric: medida nasolabial (mm)}
+  \item{wt}{numeric: peso del gorrión (g)}
+  \item{bandstat}{character: estado de banding}
+  \item{initials}{character: iniciales del recolector}
+  \item{Year}{numeric: año de colecta}
+  \item{Month}{numeric: mes de colecta (1-12)}
+  \item{Day}{numeric: día de colecta (1-31)}
+  \item{Location}{character: sitio de colecta}
+  \item{SpeciesCode}{character: código de especie}
+  \item{Sex}{character: sexo del gorrión}
+  \item{Age}{character: edad del gorrión}
+}
+}
+\source{
+Datos usados con permiso de Alain F. Zuur. Disponibles en
+\url{https://www.highstat.com/}
+}
 \usage{
 data(SparrowsElphick)
 }
 \description{
-SparrowsElphick
+Datos morfométricos de 1295 especímenes de gorriones. Incluye medidas de ala,
+tarsus, cabeza, culmen, peso y metadatos de colecta. Datos utilizados con
+permiso de Zuur, Ieno y Elphick (2010).
 }
 \examples{
 head(SparrowsElphick)
+
+}
+\references{
+Zuur AF, Ieno EN & Elphick CS. 2010.
+  A protocol for data exploration to avoid common statistical problems.
+  Methods in Ecology and Evolution 1: 3-14.
 }
 \keyword{datasets}
